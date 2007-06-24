@@ -1,0 +1,23 @@
+--- gmyth/src/Makefile.am.orig	2007-05-14 22:48:35.000000000 +0200
++++ gmyth/src/Makefile.am	2007-06-24 18:27:12.272949434 +0200
+@@ -58,14 +58,16 @@
+ 	$(LIBXML_CFLAGS)
+ 
+ libgmyth_la_LDFLAGS = 			\
+-	-export-dynamic 			\
+-	$(GLIB_CFLAGS) 				\
+-	$(GOBJECT_CFLAGS)			\
++	-export-dynamic
++
++libgmyth_la_LIBADD =			\
+ 	$(MYSQL_LIBS) 				\
+ 	$(GST_LIBS) 				\
+ 	$(GSTBASE_LIBS)				\
+ 	$(GSTPLUGINS_LIBS)			\
+-	$(LIBXML_LIBS)
++	$(LIBXML_LIBS)				\
++	$(LIBCURL_LIBS)				\
++	$(GOBJECT_LIBS)
+ 
+ libgmyth_includedir = 			\
+ 	$(pkgincludedir)
