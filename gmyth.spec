@@ -2,7 +2,7 @@ Summary:	Myth TV library based upon GLib/GObject paradigm
 Summary(pl.UTF-8):	Biblioteka Myth TV oparta na paradygmacie GLib/GObject
 Name:		gmyth
 Version:	0.7
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/gmyth/%{name}_%{version}-indt1.tar.gz
@@ -83,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/gmyth-cat
 %attr(755,root,root) %{_bindir}/gmyth-ls
 %attr(755,root,root) %{_libdir}/libgmyth.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libgmyth.so.0
 
 %files devel
 %defattr(644,root,root,755)
