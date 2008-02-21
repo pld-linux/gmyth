@@ -17,7 +17,7 @@
 -	$(LIBXML_LIBS)
 +	$(LIBXML_LIBS)				\
 +	$(LIBCURL_LIBS)				\
-+	$(GOBJECT_LIBS)
++	$(GOBJECT_LIBS) $(GTHREAD_LIBS)
  
  libgmyth_includedir = 			\
  	$(pkgincludedir)
