@@ -1,18 +1,19 @@
 Summary:	Myth TV library based upon GLib/GObject paradigm
 Summary(pl.UTF-8):	Biblioteka Myth TV oparta na paradygmacie GLib/GObject
 Name:		gmyth
-Version:	0.7
-Release:	2
+Version:	0.7.1
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/gmyth/%{name}_%{version}-indt1.tar.gz
-# Source0-md5:	a32d4a6c59a646fbce326bc4484d3912
+Source0:	http://dl.sourceforge.net/gmyth/%{name}-%{version}.tar.gz
+# Source0-md5:	ab6b7525fd9c71cf5203f9e61abec0c3
 Patch0:		%{name}-link.patch
 URL:		http://gmyth.sourceforge.net/
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	curl-devel
 BuildRequires:	glib2-devel >= 2.0
+BuildRequires:	gstreamer-devel
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	mysql-devel
@@ -53,7 +54,7 @@ Static gmyth library.
 Statyczna biblioteka gmyth.
 
 %prep
-%setup -q -n %{name}
+%setup -q
 %patch0 -p1
 
 %build
