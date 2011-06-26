@@ -1,0 +1,10 @@
+--- gmyth-0.7.1/gmyth/gmyth_http.h~	2008-03-03 12:59:37.000000000 +0100
++++ gmyth-0.7.1/gmyth/gmyth_http.h	2011-06-26 21:50:24.571219729 +0200
+@@ -42,7 +42,6 @@
+ #include "gmyth_recprofile.h"
+ 
+ #include <curl/curl.h>
+-#include <curl/types.h>
+ #include <curl/easy.h>
+ 
+ G_BEGIN_DECLS
